@@ -18,6 +18,8 @@ import numpy as np
 from collections import OrderedDict
 
 from sklearn.base import BaseEstimator
+import warnings
+warnings.filterwarnings('ignore', category=DeprecationWarning)
 import theano
 import theano.tensor as T
 from theano.tensor.signal import downsample
